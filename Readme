@@ -15,7 +15,6 @@ This setup uses Docker Compose to orchestrate three separate Node.js application
 
 1. **Clone the repositories:**
 
-   ```bash
    git clone https://github.com/VolkyoDha/Dock_Clientes DOCK_CLIENTES
    git clone https://github.com/VolkyoDha/Dock_productos DOCK_PRODUCTOS
    git clone https://github.com/VolkyoDha/Dock_Visual DOCK_VISUAL
