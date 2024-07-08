@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  dock_productos:
+    build:
+      context: ./DOCK_PRODUCTOS
+    ports:
+      - "3002:3002"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/elysium
+
+  dock_clientes:
+    build:
+      context: ./DOCK_CLIENTES
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/elysium
+
+  dock_visual:
+    build:
+      context: ./DOCK_VISUAL
+    ports:
+      - "3003:3003"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/elysium
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
