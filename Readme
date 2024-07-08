@@ -2,6 +2,8 @@
 
 This setup uses Docker Compose to orchestrate three separate Node.js applications (Clientes, Productos, Visualización) and a MongoDB database. Each application runs in its own container and connects to the shared MongoDB instance.
 
+Made by Carlos Lobo and Paola Solano
+
 ## Technologies Used
 
 - Node.js
