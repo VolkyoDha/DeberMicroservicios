@@ -23,7 +23,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Set up Docker Compose
-        run: sudo apt-get install docker-compose
+        run: sudo apt-get update && sudo apt-get install docker-compose -y
 
       - name: Verify docker-compose.yml exists
         run: ls -la ./
+
+      - name: Deploy with Docker Compose
+        run: docker-compose up -d
