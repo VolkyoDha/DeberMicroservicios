@@ -28,4 +28,4 @@ jobs:
       - name: Verify docker-compose.yml exists
         run: ls -la ./
 
-      - name: Deploy with Docker Compose
+
