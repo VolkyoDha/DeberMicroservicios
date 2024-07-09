@@ -29,4 +29,3 @@ jobs:
         run: ls -la ./
 
       - name: Deploy with Docker Compose
-        run: docker-compose up -d
