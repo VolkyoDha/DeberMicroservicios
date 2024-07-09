@@ -24,15 +24,15 @@ jobs:
 
     - name: Build and push Clientes image
       run: |
-        docker build ./DOCK_CLIENTES -t ${{ secrets.DOCKER_USERNAME }}/dock_clientes:latest
+        docker build ./DOCK_CLIENTES/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/dock_clientes:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/dock_clientes:latest
 
     - name: Build and push Productos image
       run: |
-        docker build ./DOCK_PRODUCTOS -t ${{ secrets.DOCKER_USERNAME }}/dock_productos:latest
+        docker build ./DOCK_PRODUCTOS/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/dock_productos:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/dock_productos:latest
 
     - name: Build and push Visual image
       run: |
-        docker build ./DOCK_VISUAL -t ${{ secrets.DOCKER_USERNAME }}/dock_visual:latest
+        docker build ./DOCK_VISUAL/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/dock_visual:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/dock_visual:latest
