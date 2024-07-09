@@ -27,6 +27,9 @@ jobs:
 
       - name: Verify docker-compose.yml exists
         run: ls -la ./
+<<<<<<< HEAD
 
       - name: Deploy with Docker Compose
         run: docker-compose up -d
+=======
+>>>>>>> 86793f1528eb63bb83bc1776b3a80e800ecbd9b8
