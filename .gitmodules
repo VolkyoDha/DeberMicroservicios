@@ -1,0 +1,9 @@
+[submodule "Dock_Clientes"]
+	path = Dock_Clientes
+	url = https://github.com/VolkyoDha/Dock_Clientes
+[submodule "Dock_productos"]
+	path = Dock_productos
+	url = https://github.com/VolkyoDha/Dock_productos
+[submodule "Dock_Visual"]
+	path = Dock_Visual
+	url = https://github.com/VolkyoDha/Dock_Visual
