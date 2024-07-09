@@ -27,5 +27,3 @@ jobs:
 
       - name: Verify docker-compose.yml exists
         run: ls -la ./
-
-
